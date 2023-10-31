@@ -1,0 +1,107 @@
+var vs let const :-
+ Hosting & Scoping:-
+ => developer mistake
+ => if we print a variable without declaration it leads to hosting.
+ => in var it will print undefined
+ => in let and const it will throw an error
+
+// let a =1;
+// function test(){
+//     var b=2;
+//     if(true){
+//         var c =3;
+//         console.log(a,b,c);
+    
+//     }
+//     console.log(a,b,c);
+// }
+// console.log(a);
+// console.log(a,b,c);
+// test();
+
+/*var fruits = ["🍎","🍌","🥭","🍍","🍊","🍉"]
+var [app,ban,man,pine,ora,water]= fruits;
+console.log(app);
+console.log(fruits);
+console.log(water);
+*/
+/*const groceryshop = [
+    { item:"apple",price:25,category:"fruits"},
+    { item:"salt",price:35,category:"misc"},
+    { item:"tomato",price:120,category:"vegetables"}
+]
+//console.log(groceryshop[2].category);
+const [{item,price,category}] = groceryshop
+for (var i=0;i<groceryshop.length;i++)
+{
+    console.log(groceryshop[i].price)
+
+}
+*/
+/*const person = {
+    name : "john",
+    location : ["chennai","madhurai","trichy"]
+}
+const {location:[loc,locc,loccc]} = person;
+console.log(loc);
+console.log(loccc);
+*/
+// const idno =1000;
+// const food = "farmhouse";
+// const order =
+// {
+//     idno,food
+// }
+// console.log(order)
+/*var a = 10;
+var b = 20;
+console.log("the value of a is",a +" "+"the value of b is",b);
+console.log(`the value of a is ${a} 
+the value of b is ${b}
+the value of c is ${a+b}`);
+*/
+const arr =["guvi","geek","ravi"]
+console.log(...arr);
+const arr1 = ["bob","john","doe"];
+const arr2 = ["elisa","satya","leo"]
+const arr3 = [...arr1,...arr2];
+console.log(arr3);
+function test(a,b,...rest){
+    let sum = 0;
+    for (let i=0;i<rest.length;i++)
+    {
+        sum = sum +rest[i];
+    }
+    return sum
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
